@@ -1,5 +1,12 @@
 package com.example.springstart.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
+
+@JsonNaming(value= PropertyNamingStrategy.SnakeCaseStrategy.class)
+@JsonInclude(JsonInclude.Include.NON_NULL) // not null
 public class User {
     private String user;
     private String email;
