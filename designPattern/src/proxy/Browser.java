@@ -1,6 +1,7 @@
 package proxy;
 
 public class Browser implements IBrowser{
+
    private String url;
 
    public Browser(String url){
